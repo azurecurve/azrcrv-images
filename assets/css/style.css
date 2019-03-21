@@ -1,0 +1,31 @@
+/* post images
+----------------------------------------------- */
+div.azrcrv-im {
+	max-width: 95%;
+	height: auto;
+	width: 550px;
+	margin: auto;
+	padding: 6px 0;
+}
+img.azrcrv-im {
+	width: 550px;
+}
+pre.azrcrv-im-caption{
+	margin-top: 3px;
+	border: 1px solid #007FFF;
+}
+span.azrcrv-im-caption {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 13px;
+	color: #007FFF;
+}
+pre.azrcrv-im-error{
+	margin-top: 3px;
+	background: #FFCCCC;
+	border: 1px solid red;
+}
+span.azrcrv-im-error {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 13px;
+	color: red;
+}

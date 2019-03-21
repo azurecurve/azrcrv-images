@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Images\n"
+"POT-Creation-Date: 2019-02-24 18:45+0000\n"
+"PO-Revision-Date: 2019-02-24 18:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: https://translate.azurecurve.co.uk/\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
+"X-Poedit-SearchPath-0: azrcrv-images.php\n"
+
+#: azrcrv-images.php:109
+msgid "Settings"
+msgstr ""
+
+#: azrcrv-images.php:126
+msgid "Images Settings"
+msgstr ""
+
+#: azrcrv-images.php:127
+msgid "Images"
+msgstr ""
+
+#: azrcrv-images.php:141
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: azrcrv-images.php:150
+msgid "Settings have been saved."
+msgstr ""
+
+#: azrcrv-images.php:157
+msgid "Image Shortcode"
+msgstr ""
+
+#: azrcrv-images.php:159
+msgid ""
+"The [image] shortcode is used to display images in a post or page. The "
+"<em>image</em> and <em>alt</em> attributes must be included, but other "
+"atttributes are optional."
+msgstr ""
+
+#: azrcrv-images.php:160
+msgid "Example usage of the plugin is:"
+msgstr ""
+
+#: azrcrv-images.php:161
+msgid ""
+"[image width=550px image='http://www.azurecurve.co.uk/images/posts/2019/03/"
+"SmartConnectScheduledMapCannotRun/SmartConnectScheduledMapCannotRun_1.png' "
+"alt='Windows Event Viewer showing error' error='JOURNALSTANDARD : "
+"SmartConnect Scheduler : Could not run the scheduled map You do not have "
+"access to the connectors required for this map.']"
+msgstr ""
+
+#: azrcrv-images.php:164
+msgid "image"
+msgstr ""
+
+#: azrcrv-images.php:165
+msgid "Set to the full path of the image to be displayed."
+msgstr ""
+
+#: azrcrv-images.php:168
+msgid "alt"
+msgstr ""
+
+#: azrcrv-images.php:169
+msgid ""
+"Set the alt text to be displayed if the image can;t load; support "
+"accessibility by making the alt text descriptive."
+msgstr ""
+
+#: azrcrv-images.php:172
+msgid "width"
+msgstr ""
+
+#: azrcrv-images.php:173
+msgid "Set the width at which the image should be displayed."
+msgstr ""
+
+#: azrcrv-images.php:176
+msgid "caption"
+msgstr ""
+
+#: azrcrv-images.php:177
+msgid "Set caption text to be displayed below the image."
+msgstr ""
+
+#: azrcrv-images.php:180
+msgid "error"
+msgstr ""
+
+#: azrcrv-images.php:181
+msgid "Set error text to be displayed below the image."
+msgstr ""
