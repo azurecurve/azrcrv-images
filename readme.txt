@@ -49,7 +49,7 @@ This plugin is developed for ClassicPress, but will likely work on WordPress.
 
 # Changelog
 
-### [Version 1.1.1](https://github.com/azurecurve/azrcrv-display-after-post-content/tree/v1.1.1)
+### [Version 1.1.1](https://github.com/azurecurve/azrcrv-images/tree/v1.1.1)
  * Fix bug with incorrect language load text domain.
 
 ### [Version 1.1.0](https://github.com/azurecurve/azrcrv-images/tree/v1.1.0)
