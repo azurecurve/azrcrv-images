@@ -3,10 +3,10 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Images
  * Description: Shortcode to display image in post; add width, alt, caption or error attributes.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
- * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/pluginslugi
+ * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/images/
  * Text Domain: images
  * Domain Path: /languages
  * ------------------------------------------------------------------------------
@@ -122,7 +122,7 @@ function azrcrv_im_add_plugin_action_link($links, $file){
 	}
 
 	if ($file == $this_plugin){
-		$settings_link = '<a href="'.get_bloginfo('wpurl').'/wp-admin/admin.php?page=azrcrv-im">'.esc_html__('Settings' ,'images').'</a>';
+		$settings_link = '<a href="'.get_bloginfo('wpurl').'/wp-admin/admin.php?page=azrcrv-im"><img src="'.plugins_url('/pluginmenu/images/Favicon-16x16.png', __FILE__).'" style="padding-top: 2px; margin-right: -5px; height: 16px; width: 16px;" alt="azurecurve" />'.esc_html__('Settings' ,'images').'</a>';
 		array_unshift($links, $settings_link);
 	}
 
@@ -233,7 +233,7 @@ function azrcrv_im_display_image($atts, $content = null){
 		
 		$output = "<div class='azrcrv-im' style='".esc_html__($outputwidth)."'>";
 		$output .= "<a class='azrcrv-im' href='".esc_url($image)."'>";
-		$output .= "<img class='azrcrv-im' style='".esc_html($outputwidth)."' src='".esc_url($image)."' alt='".esc_html($alt)."' />";
+		$output .= "<img class='azrcrv-im' style='width: 100%; ' src='".esc_url($image)."' alt='".esc_html($alt)."' />";
 		$output .= "</a>";
 		
 		if (strlen($caption) > 0){
