@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Images
  * Description: Shortcode to display image in post; add width, alt, caption or error attributes.
- * Version: 1.1.4
+ * Version: 1.2.0
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/images/
@@ -38,12 +38,13 @@ require_once(dirname(__FILE__).'/libraries/updateclient/UpdateClient.class.php')
 
 // add actions
 add_action('admin_menu', 'azrcrv_im_create_admin_menu');
-add_action('wp_enqueue_scripts', 'azrcrv_im_load_css');
-//add_action('the_posts', 'azrcrv_im_check_for_shortcode');
 add_action('plugins_loaded', 'azrcrv_im_load_languages');
 
 // add filters
 add_filter('plugin_action_links', 'azrcrv_im_add_plugin_action_link', 10, 2);
+add_filter('the_posts', 'azrcrv_im_check_for_shortcode', 10, 2);
+add_filter('codepotent_update_manager_image_path', 'azrcrv_im_custom_image_path');
+add_filter('codepotent_update_manager_image_url', 'azrcrv_im_custom_image_url');
 
 // add shortcodes
 add_shortcode('image', 'azrcrv_im_display_image');
@@ -109,6 +110,32 @@ function azrcrv_im_load_css(){
 }
 
 /**
+ * Custom plugin image path.
+ *
+ * @since 1.2.0
+ *
+ */
+function azrcrv_im_custom_image_path($path){
+    if (strpos($path, 'azrcrv-images') !== false){
+        $path = plugin_dir_path(__FILE__).'assets/pluginimages';
+    }
+    return $path;
+}
+
+/**
+ * Custom plugin image url.
+ *
+ * @since 1.2.0
+ *
+ */
+function azrcrv_im_custom_image_url($url){
+    if (strpos($url, 'azrcrv-images') !== false){
+        $url = plugin_dir_url(__FILE__).'assets/pluginimages';
+    }
+    return $url;
+}
+
+/**
  * Add Images action link on plugins page.
  *
  * @since 1.0.0
@@ -122,7 +149,7 @@ function azrcrv_im_add_plugin_action_link($links, $file){
 	}
 
 	if ($file == $this_plugin){
-		$settings_link = '<a href="'.get_bloginfo('wpurl').'/wp-admin/admin.php?page=azrcrv-im"><img src="'.plugins_url('/pluginmenu/images/Favicon-16x16.png', __FILE__).'" style="padding-top: 2px; margin-right: -5px; height: 16px; width: 16px;" alt="azurecurve" />'.esc_html__('Settings' ,'images').'</a>';
+		$settings_link = '<a href="'.admin_url('admin.php?page=azrcrv-im').'"><img src="'.plugins_url('/pluginmenu/images/Favicon-16x16.png', __FILE__).'" style="padding-top: 2px; margin-right: -5px; height: 16px; width: 16px;" alt="azurecurve" />'.esc_html__('Settings' ,'images').'</a>';
 		array_unshift($links, $settings_link);
 	}
 
