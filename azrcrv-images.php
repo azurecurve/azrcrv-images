@@ -3,7 +3,7 @@
  * ------------------------------------------------------------------------------
  * Plugin Name: Images
  * Description: Shortcode to display image in post; add width, alt, caption or error attributes.
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author: azurecurve
  * Author URI: https://development.azurecurve.co.uk/classicpress-plugins/
  * Plugin URI: https://development.azurecurve.co.uk/classicpress-plugins/images/
