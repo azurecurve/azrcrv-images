@@ -29,7 +29,7 @@ Example shortcode:
 [image image="http://www.example.com/hello.png" width="550px" alt="Hello World!"]
 ```
 
-This plugin is multisite compatible; each site will need settings to be configured in the admin dashboard.
+This plugin is multisite compatible.
 
 == Installation ==
 
