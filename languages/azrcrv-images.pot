@@ -1,56 +1,57 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Images\n"
-"POT-Creation-Date: 2019-02-24 18:45+0000\n"
+"POT-Creation-Date: 2021-12-27 18:00+0000\n"
 "PO-Revision-Date: 2019-02-24 18:45+0000\n"
 "Last-Translator: \n"
-"Language-Team: https://translate.azurecurve.co.uk/\n"
+"Language-Team: translate@azurecurve.co.uk\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e\n"
-"X-Poedit-SearchPath-0: azrcrv-images.php\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: azrcrv-images.php:109
+#: azrcrv-images.php:152
 msgid "Settings"
 msgstr ""
 
-#: azrcrv-images.php:126
+#: azrcrv-images.php:169
 msgid "Images Settings"
 msgstr ""
 
-#: azrcrv-images.php:127
+#: azrcrv-images.php:170
 msgid "Images"
 msgstr ""
 
-#: azrcrv-images.php:141
+#: azrcrv-images.php:184
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: azrcrv-images.php:150
+#: azrcrv-images.php:198
 msgid "Settings have been saved."
 msgstr ""
 
-#: azrcrv-images.php:157
+#: azrcrv-images.php:205
 msgid "Image Shortcode"
 msgstr ""
 
-#: azrcrv-images.php:159
+#: azrcrv-images.php:207
 msgid ""
 "The [image] shortcode is used to display images in a post or page. The "
 "<em>image</em> and <em>alt</em> attributes must be included, but other "
 "atttributes are optional."
 msgstr ""
 
-#: azrcrv-images.php:160
+#: azrcrv-images.php:208
 msgid "Example usage of the plugin is:"
 msgstr ""
 
-#: azrcrv-images.php:161
+#: azrcrv-images.php:209
 msgid ""
 "[image width=550px image='http://www.azurecurve.co.uk/images/posts/2019/03/"
 "SmartConnectScheduledMapCannotRun/SmartConnectScheduledMapCannotRun_1.png' "
@@ -59,44 +60,60 @@ msgid ""
 "access to the connectors required for this map.']"
 msgstr ""
 
-#: azrcrv-images.php:164
+#: azrcrv-images.php:212
 msgid "image"
 msgstr ""
 
-#: azrcrv-images.php:165
+#: azrcrv-images.php:213
 msgid "Set to the full path of the image to be displayed."
 msgstr ""
 
-#: azrcrv-images.php:168
+#: azrcrv-images.php:216
 msgid "alt"
 msgstr ""
 
-#: azrcrv-images.php:169
+#: azrcrv-images.php:217
 msgid ""
 "Set the alt text to be displayed if the image can;t load; support "
 "accessibility by making the alt text descriptive."
 msgstr ""
 
-#: azrcrv-images.php:172
+#: azrcrv-images.php:220
 msgid "width"
 msgstr ""
 
-#: azrcrv-images.php:173
+#: azrcrv-images.php:221
 msgid "Set the width at which the image should be displayed."
 msgstr ""
 
-#: azrcrv-images.php:176
+#: azrcrv-images.php:224
 msgid "caption"
 msgstr ""
 
-#: azrcrv-images.php:177
+#: azrcrv-images.php:225
 msgid "Set caption text to be displayed below the image."
 msgstr ""
 
-#: azrcrv-images.php:180
+#: azrcrv-images.php:228
 msgid "error"
 msgstr ""
 
-#: azrcrv-images.php:181
+#: azrcrv-images.php:229
 msgid "Set error text to be displayed below the image."
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:191
+msgid "Compatible up to:"
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:192
+msgid "Reviews"
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:193
+msgid "Read all reviews"
+msgstr ""
+
+#: libraries/updateclient/UpdateClient.class.php:383
+msgid "View details"
 msgstr ""
